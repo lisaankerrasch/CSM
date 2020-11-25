@@ -263,6 +263,7 @@ h2 {
     max-width: 400px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
 }
 
 /* h3 is only for mobile headings */
@@ -294,6 +295,10 @@ p {
     font-weight: lighter;
     color: #000;
     margin-top: 0;
+}
+
+.white {
+    color: #fff;
 }
 
 a {
@@ -399,6 +404,9 @@ hidden {
 
 .bg-beige {
     background-color:#D8BFB1;
+}
+.bg-black {
+    background-color: #000;
 }
 .bg-blue {
     background-color: #89CAF6;
@@ -575,7 +583,7 @@ hidden {
     .news-photos {
         max-height: 550px;
     }
-    .container-news-1 {
+    .container-news {
         max-height:550px;
         max-width:600px;
         padding: 40px 60px;
