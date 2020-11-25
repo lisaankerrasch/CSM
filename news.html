@@ -7,37 +7,45 @@
         <title>Community Science Museum | News</title>
     </head>
     <body class="bg-darkblue">
-        <header class="navigation mobile"> 
+        <header class="navigation"> 
+            <label class="hamburger-icon" for="hamburger-menu"><img class="icon-menu" src="icons/icon-menu.svg"></label>
+            <input type="checkbox" id="hamburger-menu">          
+            <a href="index.html"><img class="main-logo" src="icons/CSM-logo.svg" alt="CSM logo"></a>
+            <img class="logo-text" src="icons/csm-text.svg" alt="Community Science Museum">
             <nav>
-                <div class="nav-row">
-                    <label class="hamburger-icon" for="hamburger-menu"><img class="hamburger-icon" src="icons/icon-menu.svg"></label>
-                    <input type="checkbox" id="hamburger-menu">                
-                    <a  href="index.html"><img class="main-logo" src="icons/CSM-logo.svg" alt="CSM logo"></a>
-                    <img class="logo-text" src="icons/csm-text.svg" alt="Community Science Museum">
-                </div>
                 <ul>
                     <li class="hidden-menu uppercase"><a class="active-darkblue" href="news.html">news</a></li>
                     <li class="hidden-menu uppercase"><a href="visit.html">visit</a></li>
-                    <li class="hidden-menu uppercase"><a href="explore.html">explore</a></li>
+                    <li class="hidden-menu uppercase"><a class="active-green" href="explore.html">explore</a></li>
+                    <li class="hidden-menu uppercase"><a href="specialevents.html">Special Events</a></li>
                     <li class="hidden-menu uppercase"><a href="notes.html">My notes</a></li>
-                    <li class="hidden-menu uppercase"><a href="about.html">About us</a></li>
-                    <li class="hidden-menu uppercase"><a href="contact.html">Contact</a></li>
+                    <li class="hidden-menu uppercase"><a href="about.html">About us</a></li>                    <li class="hidden-menu uppercase"><a href="contact.html">Contact</a></li>
+                    <li class="hidden-menu"><div><input class="search-bar-mobile" type="text" placeholder="Type your search here..."><img class="button-go-mobile" src="icons/button-go.svg"></div></li>
+                    <label class="search-icon desktop" for="search-menu"><img class="search-menu" src="icons/icon-search.svg"></label>
+                    <input class="search-bar-desktop" type="checkbox" id="search-menu">
+                    <div><input class="search-bar-desktop" type="text" placeholder="Type your search here..."><img class="button-go-desktop" src="icons/button-go.svg"></div>
                 </ul>
             </nav>
         </header>
+        <aside><img src="icons/news-yellow.svg" alt="news heading"></aside>
         <main>
-            <h1 class="uppercase">news</h1>
-            <section class="container-main">
-                <div class="flex">
-                    <div class="container-img">
-                        <a class="center" href="news.html"><img class="square border-darkblue" src="images/SP53.jpg" alt="News"></a>
-                        <div class="centered-text"><h2>News</h2></div>
+            <section class="container-main mobile">
+                <h3>News</h3>
+                <div class="flex-news">
+                    <div class="news-item-1">
+                        <a href="news.html"><img class="square border-coral" src="images/SP53.jpg" alt="Pepper the robot news story"></a>
+                        <div class="centered-text"><a href="peppernews.html"><h2 class="bg-aqua">Pepper steps up his game</h2></a></div>
                     </div>
-                    <a class="center" href="visit.html"><img class="square border-coral" src="images/SP50.jpg" alt="Visit the museum"></a>
-                    <a class="center" href="specialevents.html"><img class="square border-purple" src="images/SP53.jpg" alt="Special events"></a>
-                    <img class="square border-darkgreen" src="images/SP53.jpg" alt="Pepper the robot">
-                    <img class="square border-yellow" src="images/SP53.jpg" alt="Pepper the robot">
-                    <img class="square border-blue" src="images/SP53.jpg" alt="Pepper the robot">
+                    <div class="news-item-2">
+                        <a href="visit.html"><img class="square border-darkcoral" src="images/SP9.jpg" alt="Life on mars news story"></a>
+                        <div class="centered-text"><a href="marsnews.html"><h2 class="bg-yellow">Life on mars?</h2></a></div>
+                    </div>
+                    <div class="news-item-3">
+                        <a href="visit.html"><img class="square border-yellow" src="images/SP4.jpg" alt="Lights on news story"></a>
+                        <div class="centered-text"><a href="lightsonnews.html"><h2 class="bg-blue">Lights on</h2></a></div>
+                    </div>
+                </div>
+                <div class="flex-news-desktop">
                 </div>
             </section>
         </main>
@@ -66,12 +74,11 @@
                     <a href="contact.html"><p class="footer-text bold">Contact us</p></a>
                 </div>
                 <div class="footer-item-5">
-                    <a href="explore.html"><p class="footer-text bold">Get involved</p></a>
+                    <a href="getinvolved.html"><p class="footer-text bold">Get involved</p></a>
                 </div>
                 <div class="footer-item-6">
                     <p class="footer-text bold">Terms and conditions</p>
                 </div>
-            </section>
             </section>
         </footer>
     </body>
