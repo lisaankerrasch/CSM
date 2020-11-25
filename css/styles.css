@@ -1,6 +1,6 @@
 /* hidden elements */ 
 
-.index-item-desktop, .desktop, .button-go-desktop {
+.index-item-desktop, .desktop, .button-go-desktop, .flex-index-desktop {
     display: none;
 }
 
@@ -162,7 +162,7 @@ footer {
     margin: 63px auto;
 }
 
-.flex-index, .flex-news {
+.flex-index-mobile, .flex-news-mobile {
     display:flex;
     flex-direction: column;
     margin: 0 auto;
@@ -260,7 +260,7 @@ h2 {
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
-    max-width: 240px;
+    max-width: 400px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -418,6 +418,9 @@ hidden {
 .bg-darkcoral {
     background-color: #EC665E;
 }
+.bg-lightcoral {
+    background-color: #F6D4D1;
+}
 .bg-green {
     background-color: #85C482;
 }
@@ -464,13 +467,14 @@ hidden {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 230px;
 }
 
 @media only screen and (min-width:1500px) {
 
     /* hidden elements */ 
 
-    .mobile, .search-bar-mobile, .button-go-mobile {
+    .mobile, .search-bar-mobile, .button-go-mobile, .flex-index-mobile, .flex-news-mobile, h3 {
         display: none;
     } 
 
@@ -549,10 +553,37 @@ hidden {
     }
 
     /* Main */ 
-    
+
+    .square {
+        margin: 0 auto;
+        object-fit:cover;
+        width:287px;
+        height:287px;
+        max-width: 100%;
+    }
+
+    .flex-index-desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .container-main {
         margin: 75px auto;
         max-width: 1060px;  
+    }
+
+    .news-photos {
+        max-height: 550px;
+    }
+    .container-news-1 {
+        max-height:550px;
+        max-width:600px;
+        padding: 40px 60px;
+    }
+
+    .polygon-desktop {
+        display:block;
+        width: 330px;
     }
     .active-darkblue {
         background-color: #3D718C
@@ -592,14 +623,24 @@ hidden {
         position: relative;
         z-index: 1;
     }
+
+    aside.right {
+        float: right;
+        width: 120px;
+        height: auto;
+        position: relative;
+        top: -600px;
+        right: 150px;
+        z-index: 1;
+    }
     
 
     /* Desktop Footer */ 
 
     footer {
         height: 166px;
-        background-color: #3EA481
-    }
+        background-color: #3EA481;
+        }
     .section-footer-desktop {
         max-width: 1080px;
         margin: 0 auto;
@@ -636,7 +677,6 @@ hidden {
         border-top: 36px solid #AA94BD;
     }
 }
-
 @media only screen and (max-width:335px) {
     .main-logo {
         margin: 0 20px 0 20px;
