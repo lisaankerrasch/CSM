@@ -119,7 +119,15 @@ body {
     margin-bottom: 63px;
 }
 
-.polygon-mobile {
+.container-visit {
+    max-width: 70%;
+     margin: 0 auto;
+     background-color: #F6D4D1;
+     padding: 30px;
+     margin-bottom: 63px;
+ }
+
+.polygon.mobile {
     display: block;
     width: 60%;
     height: auto;
@@ -162,7 +170,7 @@ footer {
     margin: 63px auto;
 }
 
-.flex-index-mobile, .flex-news-mobile {
+.flex-index-mobile, .flex-news-mobile, .flex-explore {
     display:flex;
     flex-direction: column;
     margin: 0 auto;
@@ -462,7 +470,7 @@ hidden {
 
 /* centered text */
 
-.index-item-1, .index-item-2, .index-item-3, .index-item-4, .index-item-5, .index-item-6, .news-item-1, .news-item-2, .news-item-3, .explore-item-1, .explore-item-2, .explore-item-3, .explore-item-4, .explore-item-5 {
+.index-item-1, .index-item-2, .index-item-3, .index-item-4, .index-item-5, .index-item-6, .news-item-1, .news-item-2, .news-item-3, .explore-item-1, .explore-item-2, .explore-item-3, .explore-item-4, .explore-item-5, .visit-grid-item.three {
     margin: 0 auto;
     padding-bottom: 63px;
     position: relative;
@@ -563,6 +571,19 @@ hidden {
 
     /* Main */ 
 
+    .flex-explore {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container-visit {
+        display: block;
+        max-width: 620px;
+        border: 20px solid #E8968E;
+    }
+
     .square {
         margin: 0 auto;
         object-fit:cover;
@@ -628,7 +649,7 @@ hidden {
         margin-bottom: 50px; 
     }
 
-    .polygon-desktop {
+    .polygon.desktop {
         display:block;
         width: 330px;
     }
@@ -721,6 +742,23 @@ hidden {
     .footer-border-lightpurple {
         border-top: 36px solid #AA94BD;
     }
+    .grid-visit {
+        display: grid;
+        grid-template-columns: 630px 400px;
+        grid-template-areas: 
+    "main sidebar-top"
+    "main sidebar-bottom";
+    }
+
+    .visit-grid-item.one {
+        grid-area: main;
+      }
+    .visit-grid-item.two {
+        grid-area: sidebar-top;
+      }
+    .visit-grid-item.three {
+        grid-area: sidebar-bottom;
+      }
 }
 @media only screen and (max-width:335px) {
     .main-logo {
