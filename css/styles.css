@@ -1,6 +1,6 @@
 /* hidden elements */ 
 
-.index-item-desktop, .desktop, .button-go-desktop, .flex-index-desktop {
+.index-item-desktop, .button-go-desktop, .flex-index-desktop {
     display: none;
 }
 
@@ -478,7 +478,7 @@ hidden {
     max-width: 230px;
 }
 
-@media only screen and (min-width:1500px) {
+@media only screen and (min-width:1200px) {
 
     /* hidden elements */ 
 
@@ -525,7 +525,7 @@ hidden {
         max-width: 1080px;
     }
     li a {
-    padding: 5px 41px 20px 41px;
+    padding: 5px 20px 20px 20px;
     }
 
     .search-bar-desktop {
@@ -537,6 +537,7 @@ hidden {
         margin:30px auto;
     }
     .search-icon.desktop {
+        display: none;
         height: 46px;
     }
     .search-menu {
@@ -570,6 +571,8 @@ hidden {
         max-width: 100%;
     }
 
+
+
     .flex-index-desktop {
         display: flex;
         flex-direction: row;
@@ -581,12 +584,48 @@ hidden {
     }
 
     .news-photos {
-        max-height: 550px;
+        margin: 0 auto;
+        object-fit:cover;
+        max-width: 100%;
     }
+
+    .news-photos.one {
+        width: 337px;
+    }
+
+    .news-photos.two {
+        width: 309px;
+    }
+
+    .news-photos.three {
+        width: 614px;
+    }
+
     .container-news {
-        max-height:550px;
-        max-width:600px;
-        padding: 40px 60px;
+        height:500px;
+        padding: 20px 30px 50px 30px;
+    }
+
+    .container-news.one {
+        width: 483px;
+    }
+
+    .container-news.two {
+        width: 511px;
+    }
+
+    .container-news.three {
+        width: 206px;
+    }
+
+
+    .news-story {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px; 
     }
 
     .polygon-desktop {
@@ -634,8 +673,6 @@ hidden {
 
     aside.right {
         float: right;
-        width: 120px;
-        height: auto;
         position: relative;
         top: -600px;
         right: 150px;
@@ -695,7 +732,7 @@ hidden {
     }
 }
 
-@media only screen and (max-width:1499px) {
+@media only screen and (max-width:1200px) {
     aside, .desktop, .search-bar-desktop {
         display: none;
     }
