@@ -17,10 +17,13 @@ height:102px;
 }
 
 .main-logo {
-    font-family: 'News Cycle', sans-serif;
     width: 80px;
     margin-left:50px;
     margin-right:50px;
+}
+
+svg {
+    font-family: 'News Cycle', sans-serif;
 }
 
 .logo-text {
