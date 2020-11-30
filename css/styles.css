@@ -584,12 +584,16 @@ hidden {
 
     /* Main */ 
 
+    /* Explore Desktop  */ 
+
     .flex-explore {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    /* Visit Desktop */ 
 
     .container-visit {
         display: block;
@@ -606,11 +610,11 @@ hidden {
     }
 
 
-
     .flex-index-desktop {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-bottom: 0;
     }
     .container-main {
         margin: 75px auto;
@@ -722,8 +726,10 @@ hidden {
         
      }
 
+     /* Get Involved Desktop */ 
+
     .button-getinvolved     {
-        grid-area: 1/2/2/3 ;
+        grid-area: 1/2 ;
         display: block;
         max-width: 350px;
         margin-top: 200px;
@@ -735,13 +741,12 @@ hidden {
         display: grid;
         grid-template-columns: repeat(1060px, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 60px;
         grid-row-gap: 30px;
         margin-bottom: 150px;
     }
 
     .container-getinvolved {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         border: 20px solid #3EA481;
         max-width: 450px;
         max-height: 600px;
@@ -750,7 +755,7 @@ hidden {
     }
 
     .image-getinvolved {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         margin-left: 740px;
         margin-top: 120px;
     }
@@ -761,7 +766,7 @@ hidden {
     }
 
     .button-contact {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         max-width: 350px;
         margin-top: 700px;
         margin-left: 500px;
@@ -779,7 +784,7 @@ hidden {
     }
 
     .container-specialevents-1 {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         max-width: 1000px;
         max-height: 300px;
     }
@@ -793,7 +798,7 @@ hidden {
     }
 
     .container-specialevents-2 {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         margin-top: 150px;
         margin-left: 450px;
         z-index: 2;
@@ -804,7 +809,7 @@ hidden {
     }
 
     .container-specialevents-3 {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         margin-top: 450px;
         margin-left: 150px;
         max-width: 700px;
@@ -825,14 +830,14 @@ hidden {
     }
 
     .container-specialevents-4 {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         margin-top: 680px;
         margin-left: 250px;
         z-index: 2;
     }
 
     .container-specialevents-5 {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         margin-top: 1000px;
         z-index: 1;
     }
@@ -849,7 +854,7 @@ hidden {
         max-width: 420px;
     }
     .container-specialevents-6 {
-        grid-area: 1/1/2/2;
+        grid-area: 1/2;
         margin-top: 1100px;
         margin-left: 540px;
         z-index: 2;
@@ -871,6 +876,7 @@ hidden {
         position: relative;
         top: -600px;
         right: 150px;
+        margin-bottom: -600px;
         z-index: 1;
     }
     
