@@ -112,6 +112,7 @@ body {
 
 .container-main {
     margin-top: 63px;
+    
 }
 
 .container-mobile {
@@ -122,12 +123,16 @@ body {
     margin-bottom: 63px;
 }
 
+/* Get Involved mobile */ 
+
 .container-getinvolved {
     max-width: 70%;
     margin: 0 auto;
     padding: 30px;
     margin-bottom: 63px;
  }
+
+ /* Visit Mobile */ 
 
 .container-visit {
     max-width: 70%;
@@ -137,6 +142,10 @@ body {
     margin-bottom: 63px;
  }
 
+
+ /* My Notes Mobile */ 
+
+
 .polygon-notes {
     display: block;
     width: 60%;
@@ -145,15 +154,7 @@ body {
     
 }
 
-.some-icon {
-    display: block;
-    width: 100px;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom:50px;
-}
-
-/* footer */
+/* footer Mobile */
 
 footer {
     background-color: #000;
@@ -202,6 +203,14 @@ footer {
     margin: 0 auto;
     padding-top: 30px;
     max-width: 280px;
+}
+
+.some-icon {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom:50px;
 }
 
 /* Borders */ 
@@ -429,9 +438,6 @@ img {
     text-transform: uppercase;
 }
 
-hidden {
-    display: none;
-}
 /* Background colors for body and image text */ 
 
 .bg-beige {
@@ -518,29 +524,15 @@ hidden {
 
     /* hidden elements */ 
 
-    .mobile, .search-bar-mobile, .button-go-mobile, .flex-index-mobile, .flex-news-mobile, h3 {
+    .mobile, .search-bar-mobile, .button-go-mobile, .flex-index-mobile, .flex-news-mobile, h3, .hamburger-icon, .footer-icon, .footer-icon-big {
         display: none;
     } 
-
-    .navigation {
-    padding-top: 0;
-    }
-    .hamburger-icon {
-        display: none;
-    }
-    .footer-icon {
-        display: none;    
-    }
-    .footer-icon-big {
-        display: none;    
-    }
-
-
 
     /* Desktop header and nav */ 
 
     .navigation {
        height: 231px; 
+       padding-top: 0;
     }
     .main-logo {
         width: 119px;
@@ -1001,12 +993,11 @@ hidden {
         z-index: 1;
     }
     
-
     /* Desktop Footer */ 
 
     footer {
         height: 166px;
-        background-color: #329472;
+        background-color: #216e53;
         }
     .section-footer-desktop {
         max-width: 1080px;
