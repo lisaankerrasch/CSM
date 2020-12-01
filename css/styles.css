@@ -196,6 +196,13 @@ footer {
 
 /* Global */
 
+/* Contact page */ 
+
+.button-contact.mobile {
+    margin: 0 auto;
+    padding-top: 30px;
+    max-width: 280px;
+}
 
 /* Borders */ 
 
@@ -503,6 +510,10 @@ hidden {
     max-width: 230px;
 }
 
+.centered-text.visit {
+    top: 30%;
+}
+
 @media only screen and (min-width:1200px) {
 
     /* hidden elements */ 
@@ -588,14 +599,21 @@ hidden {
 
     /* Main */ 
 
+    /* Notes Page Desktop */ 
+
     .polygon-notes.one {
         display: block;
-        float: left;
         width: 400px;
         height: auto;
-        margin: 40px auto;
-        
+        margin: 40px 0 0 200px;
     }
+    .polygon-notes.two {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin: 40px 0 0 500px ;
+    }
+
 
     /* Explore Desktop  */ 
 
@@ -633,6 +651,8 @@ hidden {
         margin: 75px auto;
         max-width: 1060px;  
     }
+
+    /* News Page Desktop */ 
 
     .news-photos {
         margin: 0 auto;
@@ -683,6 +703,9 @@ hidden {
         display:block;
         width: 330px;
     }
+
+    /* Active pages desktop */ 
+
     .active-darkblue {
         background-color: #3D718C
     }
@@ -710,6 +733,9 @@ hidden {
     .active-beige {
         background-color:#D4C0B3;
     }
+
+    /* Contact page desktop */ 
+
     .container-contact {
         grid-area: 1/1/2/2;
         margin-left: 30px;
@@ -873,6 +899,88 @@ hidden {
         z-index: 2;
     }
 
+    /* About Us Desktop */ 
+
+
+    .grid-about {
+        margin-top: 63px;
+        padding-left: 120px;
+        max-width: 1080px;
+        display: grid;
+        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-bottom: 150px;
+    }
+
+    .container-about-1 {
+        grid-area: 1/2;
+        max-width: 800px;
+        max-height: 500px;
+    }
+
+    .container-about-1 p {
+        padding: 30px 350px 0 60px;
+        margin: 0;
+    }
+
+    .container-about-2 {
+        grid-area: 1/2;
+        margin-top: 100px;
+        margin-left: 550px;
+        z-index: 2;
+    }
+
+    .about-photo {
+        max-width: 400px;
+    }
+
+    .container-about-3 {
+        grid-area: 1/2;
+        margin-top: 600px;
+        max-width: 520px;
+        max-height: 500px; 
+        z-index: 1;
+    }
+
+    .container-about-3 h4 {
+        padding: 20px 0 0 30px;
+    }
+
+    .container-about-3 p {
+        padding: 20px 30px 0 30px;
+    }
+
+    .container-about-4 {
+        grid-area: 1/2;
+        margin-top: 700px;
+        margin-left: 650px;
+        max-width: 300px;
+        max-height: 500px;
+    }
+
+    .container-about-4 h4 {
+        padding: 20px 0 0 30px;
+    }
+
+    .container-about-4 p {
+        padding: 20px 30px 0 30px;
+    }
+
+    .container-about-5 {
+        grid-area: 1/2;
+        max-width: 450px;
+        margin-top: 1200px;
+        margin-left: 100px;
+    }
+
+    .container-about-5 h4 {
+        padding: 20px 0 0 40px;
+    }
+
+    .container-about-5 p {
+        padding: 20px 40px 40px 40px;
+    }
+
     /* Side header */ 
 
     aside {
@@ -898,7 +1006,7 @@ hidden {
 
     footer {
         height: 166px;
-        background-color: #3EA481;
+        background-color: #348b6d;
         }
     .section-footer-desktop {
         max-width: 1080px;
@@ -935,6 +1043,9 @@ hidden {
     .footer-border-lightpurple {
         border-top: 36px solid #AA94BD;
     }
+
+    /* Visit Page Desktop */ 
+
     .grid-visit {
         display: grid;
         grid-template-columns: 630px 400px;
@@ -948,10 +1059,13 @@ hidden {
       }
     .visit-grid-item.two {
         grid-area: sidebar-top;
+        padding-left: 30px;
       }
     .visit-grid-item.three {
         grid-area: sidebar-bottom;
       }
+
+      /* Hidden elements */ 
 
     .mobile, .container-mobile {
         display: none;
@@ -970,5 +1084,11 @@ hidden {
 @media only screen and (max-width:1200px) {
     aside, .desktop, .search-bar-desktop {
         display: none;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    aside.right {
+        display:none
     }
 }
