@@ -137,7 +137,7 @@ body {
     margin-bottom: 63px;
  }
 
-.polygon.mobile {
+.polygon-notes {
     display: block;
     width: 60%;
     height: auto;
@@ -587,6 +587,15 @@ hidden {
     }
 
     /* Main */ 
+
+    .polygon-notes.one {
+        display: block;
+        float: left;
+        width: 400px;
+        height: auto;
+        margin: 40px auto;
+        
+    }
 
     /* Explore Desktop  */ 
 
