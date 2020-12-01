@@ -283,6 +283,9 @@ footer {
     border: 20px solid #D4C0B3;
 }
 
+.border-lightbeige {
+    border: 20px solid #F2E6DF;
+}
 .border-aqua {
     border: 20px solid #3EA481;
 }
@@ -717,7 +720,7 @@ img {
         background-color: #63785F;
     }
     .active-darkpurple {
-        background-color: #62188C;
+        background-color: #7C38B2;
     }
     .active-purple {
         background-color: #872EB9;
@@ -891,6 +894,75 @@ img {
         z-index: 2;
     }
 
+    /* Exhibitions Desktop */ 
+
+    .grid-exhibitions {
+        padding-left: 120px;
+        max-width: 1080px;
+        display: grid;
+        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-bottom: 150px;
+    }
+
+    .container-exhibitions-1 {
+        grid-area: 1/2;
+        max-width: 850px;
+        max-height: 600px;
+    }
+
+    .container-exhibitions-1 p {
+        padding: 150px 450px 0 95px;
+    }
+
+    .container-exhibitions-2 {
+        grid-area: 1/2;
+        margin-top: 100px;
+        margin-left: 550px;
+        z-index: 2;
+    }
+
+    .exhibitions-photo-1 {
+        max-width: 500px;
+    }
+
+    .container-exhibitions-3 {
+        grid-area: 1/2;
+        margin-top: 550px;
+        margin-left: 150px;
+        max-width: 700px;
+        max-height: 450px; 
+        z-index: 2;
+    }
+
+    .exhibitions-photo-2 {
+        max-width: 300px;
+    }
+
+    .container-exhibitions-4 {
+        grid-area: 1/2;
+        margin-top: 880px;
+        margin-left: 450px;
+        max-width: 610px;
+        max-height: 510px;
+        z-index: 1;
+    }
+
+
+    .container-exhibitions-4 p {
+        padding: 75px 110px 100px 200px;
+    }
+
+    .container-exhibitions-5 {
+        grid-area: 1/2;
+        margin-top: 1200px;
+        z-index: 2;
+    }
+
+    .exhibitions-photo-3 {
+        max-width: 550px;
+    }
+
     /* About Us Desktop */ 
 
 
@@ -997,7 +1069,7 @@ img {
 
     footer {
         height: 166px;
-        background-color: #216e53;
+        background-color: #030303;
         }
     .section-footer-desktop {
         max-width: 1080px;
@@ -1016,6 +1088,9 @@ img {
     .footer-item-1 {
         max-width: 240px;
     }
+
+    /* Footer borders */ 
+
     .footer-border-beige {
         border-top: 36px solid #F2E6DF;
     }
