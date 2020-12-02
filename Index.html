@@ -2,14 +2,14 @@
 <html>
     <head>
         <link href="css/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet"        <meta name="description" content="Explore together"/>
+        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Homepage of the Community Science museum"/>
         <title>Community Science Museum | Home</title>
     </head>
     <body class="bg-beige">
         <header class="navigation"> 
-            <label class="hamburger-icon" for="hamburger-menu"><img class="icon-menu" src="icons/icon-menu.svg" alt="meny icon"></label>
+            <label class="hamburger-icon" for="hamburger-menu"><img class="icon-menu" src="icons/icon-menu.svg" alt="menu icon"></label>
             <input type="checkbox" id="hamburger-menu">          
             <a href="index.html"><img class="main-logo" src="icons/CSM-logo.svg" alt="CSM logo"></a>
             <img class="logo-text" src="icons/csm-text.svg" alt="Community Science Museum">
@@ -21,10 +21,12 @@
                     <li class="hidden-menu uppercase"><a href="specialevents.html">Special Events</a></li>
                     <li class="hidden-menu uppercase"><a href="notes.html">My notes</a></li>
                     <li class="hidden-menu uppercase"><a href="about.html">About us</a></li> 
-                    <li class="hidden-menu"><div><input class="search-bar-mobile" type="text" placeholder="Type your search here..."><img class="button-go mobile" src="icons/button-go.svg"></div></li>
-                    <label class="search-icon desktop" for="search-menu"><img class="search-menu" src="icons/icon-search.svg"></label>
-                    <input class="search-bar-desktop" type="checkbox" id="search-menu">
-                    <div><input class="search-bar-desktop" type="text" placeholder="Type your search here..."><img class="button-go desktop" src="icons/button-go.svg"></div>
+                    <li class="hidden-menu"><div><input class="search-bar-mobile" type="text" placeholder="Type your search here..."><img class="button-go mobile" src="icons/button-go.svg"></div>
+                    <label class="search-icon desktop" for="search-menu"><img class="icon-search" src="icons/icon-search.svg"></label>
+                    <input class="desktop" type="checkbox" id="search-menu">
+                    <div class="search-bar-desktop">
+                        <input class="search-bar-dropdown" type="text" placeholder="Type your search here..."><img class="button-go desktop" src="icons/button-go.svg" alt="search icon">
+                    </div>
                 </ul>
             </nav>
         </header>
