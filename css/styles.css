@@ -96,15 +96,15 @@ li a {
 }
 
 .search-bar-mobile {
-background-color: #fff;
-width: 240px;
-max-width: 240px;
-height: 46px;
-border-radius: 30px;
-outline: none;
-position:relative;
-z-index: 2;
-}
+    background-color: #fff;
+    width: 240px;
+    max-width: 240px;
+    height: 46px;
+    border-radius: 30px;
+    outline: none;
+    position:relative;
+    z-index: 2;
+    }
 
 input {
     font-family: 'Roboto', sans-serif;
@@ -147,6 +147,48 @@ input {
     margin-bottom: 63px;
  }
 
+ /* Login */ 
+
+ fieldset {
+    border: none;
+    padding: 0;
+}
+
+.form-box {
+    max-width: 200px;
+    padding: 10px;
+  }
+
+fieldset input {
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid #3EA481;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.p-form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.login-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+
+legend {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #63785F;
+    padding: 0 0 30px 0;
+}
 
  /* My Notes Mobile */ 
 
@@ -585,9 +627,9 @@ img {
     .icon-search {
         float: right;
         height: 46px;
-        position: relative;
-        top: -50px;
-        right: 30px;
+        position: absolute;
+        top: 0px;
+        right: 40px;
     }
 
     .search-bar-dropdown {
@@ -601,6 +643,53 @@ img {
     }
 
     /* Main */ 
+
+    /* Login Desktop */ 
+
+    .grid-login {
+        padding-left: 120px;
+        max-width: 1080px;
+        display: grid;
+        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-bottom: 150px;
+    }
+
+    .container-login-1 {
+        grid-area: 1/2;
+        max-width: 850px;
+        max-height: 600px;
+    }
+
+    .container-login-2 {
+        grid-area: 1/2;
+        margin-top: 100px;
+        margin-left: 550px;
+        z-index: 2;
+    }
+
+    .container-login-3 {
+        grid-area: 1/2;
+        max-width: 300px;
+        margin-top: 550px;
+        margin-left: 250px;
+        z-index: 2;
+    }
+
+    .login-photo-1 {
+        max-width: 500px;
+    }
+
+    .form-box {
+        max-width: 300px;
+        padding: 100px;
+      }
+
+    fieldset input {
+        height: 30px;
+        width: 300px;
+    }
+
 
     /* Notes Page Desktop */ 
 

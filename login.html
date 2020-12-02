@@ -2,12 +2,12 @@
 <html>
     <head>
         <link href="css/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet"        <meta name="description" content="Explore together"/>
+        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Find out where to visit us and buy tour tickets"/>
-        <title>Community Science Museum | Visit</title>
+        <meta name="description" content="Log in to view your notes"/>
+        <title>Community Science Museum | Log in</title>
     </head>
-    <body class="bg-darkcoral">
+    <body class="bg-green">
         <header class="navigation"> 
             <label class="hamburger-icon" for="hamburger-menu"><img class="icon-menu" src="icons/icon-menu.svg"></label>
             <input type="checkbox" id="hamburger-menu">          
@@ -16,10 +16,10 @@
             <nav>
                 <ul>
                     <li class="hidden-menu uppercase"><a href="news.html">news</a></li>
-                    <li class="hidden-menu uppercase"><a class="active-darkcoral" href="visit.html">visit</a></li>
+                    <li class="hidden-menu uppercase"><a href="visit.html">visit</a></li>
                     <li class="hidden-menu uppercase"><a href="explore.html">explore</a></li>
                     <li class="hidden-menu uppercase"><a href="specialevents.html">Special Events</a></li>
-                    <li class="hidden-menu uppercase"><a href="login.html">My notes</a></li>
+                    <li class="hidden-menu uppercase"><a class="active-green" href="login.html">My notes</a></li>
                     <li class="hidden-menu uppercase"><a href="about.html">About us</a></li>
                     <li class="hidden-menu"><div><input class="search-bar-mobile" type="text" placeholder="Type your search here..."><img class="button-go mobile" src="icons/button-go.svg"></div></li>
                     <label class="search-icon desktop" for="search-menu"><img class="icon-search" src="icons/icon-search.svg"></label>
@@ -30,50 +30,49 @@
                 </ul>
             </nav>
         </header>
-        <aside><img src="icons/visit-lightyellow.svg" alt="Visit heading"></aside>
+        <aside><img src="icons/login-darkgreen.svg" alt="Ecology heading"></aside>
         <main>
             <section class="container-main">
-                <h3>Visit</h3>
-                    <section class="grid-visit">
-                        <div class="container-visit visit-grid-item one">
-                            <h4>Location</h4>
-                            <p>The museum is located at </p>
-                            <p>15 Museum Avenue</p>
-                            <p>10013 NY</p>
-                                
-                            <h4> Admission </h4>
-                            <p>The entrance is free for all. 
-                                There are guided tours of the museum that leave every hour. These tours are $7 per person and include a handy printed guide of the museum. 
-                                
-                                If you would like to organize a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
-                                
-                            <h4>Hours</h4>
-                            <p>Monday: Closed</p>
-                            <p>Tuesday: 10:00 – 16:00</p>
-                            <p>Wednesday: 10:00 – 16:00</p>
-                            <p>Thursday: 10:00 – 16:00</p>
-                            <p>Friday: 10:00 – 19:00</p>
-                            <p>Saturday: 9:00 – 16:00</p>
-                            <p>Sunday: 9:00 – 16:00</p>
-                                
-                            <h4>Accessibility</h4>
-                            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
-                                Food and drink
-                                There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
-                                
-                            <h4>Shop</h4>
-                            <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
-                            </p>
-                        </div>  
-                        <a class="visit-grid-item two" href="buytickets.html"><img class="polygon-visit" src="icons/buytickets-mobile.svg"></a>
-                        <div class="visit-grid-item three desktop">
-                            <a href="explore.html"><img class="square border-lightyellow" src="images/SP56.jpg" alt="Explore exhibitions page"></a>
-                            <div class="centered-text visit"><a href="explore.html"><h2 class="bg-turquoise">Explore exhibitions</h2></a></div>
-                        </div>
+                <h3 class="bg-lightgreen">Login</h3>
+                <div class="container-mobile bg-lightgreen">
+                    <section class="form-box">
+                        <form>
+                            <fieldset alt="login box">
+                                <legend class="uppercase">Log in</legend>
+                                <p class="p-form"><label for="email">Email</label></p>
+                                <p class="p-form"><input type="email" name="email" id="email"></p>
+                                <p class="p-form"><label for="password">Password</label></p>
+                                <p class="p-form"><input type="password" name="password" id="password"></p>
+                            </fieldset>
+                        </form>
+                        <p class="login-paragraph">Forgot password?</p>
                     </section>
+                </div>
+            </section>
+            <section class="grid-login desktop">
+                <div class="container-login-1 bg-lightgreen border-lightyellow">
+                    <section class="form-box">
+                        <form>
+                            <fieldset alt="login box">
+                                <legend class="uppercase">Log in</legend>
+                                <p class="p-form"><label for="email">Email</label></p>
+                                <p class="p-form"><input type="email" name="email" id="email"></p>
+                                <p class="p-form"><label for="password">Password</label></p>
+                                <p class="p-form"><input type="password" name="password" id="password"></p>
+                            </fieldset>
+                        </form>
+                        <p class="login-paragraph">Forgot password?</p>
+                    </section>        
+                </div>
+                <div class="container-login-2">
+                    <img class="login-photo-1 border-darkyellow" src="images/SP69.jpg" alt="Photo of yellow pencils">
+                </div>
+                <div class="container-login-3">
+                    <a href="notes.html"><img class="login-photo-3" src="icons/button-login.svg" alt="log in button"></a>
+                </div>
             </section>
         </main>
-        <footer class="footer-border-lightcoral">
+        <footer class="footer-border-lightgreen">
             <section class="section-footer-mobile">
                 <a href="contact.html"><img class="footer-icon mobile " src="icons/icon-mail.svg" alt="mail icon"></a>
                 <a href="getinvolved.html"><img class="footer-icon-big mobile" src="icons/icon-community.svg" alt="get involved icon"></a>
