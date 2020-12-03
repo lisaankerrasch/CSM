@@ -400,6 +400,8 @@ img {
     max-width: 100%;
 }
 
+/* Color codes */
+
 .lightblue {
     color: #BDE1F7;
 }
@@ -1292,6 +1294,10 @@ legend.tickets {
             line-height: 0.5;
             color: #fff;
         }
+
+    .footer-text.padding {
+        padding-top:10px;
+    }
     .footer-item-1 {
         max-width: 240px;
     }
