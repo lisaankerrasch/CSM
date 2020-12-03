@@ -400,7 +400,7 @@ img {
     max-width: 100%;
 }
 
-/* Color codes */
+/* Color */
 
 .lightblue {
     color: #BDE1F7;
@@ -1270,9 +1270,6 @@ legend.tickets {
         z-index: 1;
     }
 
-    fieldset.tickets input {
-        max-width: 350px;
-    }
     
     /* Desktop Footer */ 
 
@@ -1370,7 +1367,21 @@ legend.tickets {
         width: 55px;
         padding: 22px 40px 0 40px;
     }
+    fieldset input {
+        height: 30px;
+        width: 150px;
+    }
+
+    fieldset.tickets input {
+    height: 30px;
+    width: 150px;
+    }
+
+    .tickets-box {
+        padding: 0;
+    }
 }
+
 
 @media only screen and (max-width:1200px) {
     aside, .desktop {
