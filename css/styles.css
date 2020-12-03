@@ -533,6 +533,7 @@ img {
     background-color: #3EA481;
 }
 
+
 .small-photo {
     max-width: 100%;
     padding-bottom: 30px;
@@ -641,6 +642,62 @@ legend.tickets {
 }
 
 @media only screen and (min-width:1200px) {
+
+    .active-beige {
+        background-color:#D8BFB1;
+    }
+    .active-black {
+        background-color: #000;
+    }
+    .active-blue {
+        background-color: #89CAF6;
+    }
+    .active-darkblue {
+        background-color: #3D718C;
+    }
+    .active-lightblue {
+        background-color:#BDE1F7;
+    }
+    .active-yellow {
+        background-color: #EEC970;
+    }
+    .active-lightyellow {
+        background-color:#F9EBC6;
+    }
+    .active-coral {
+        background-color:#E8968E;
+    }
+    .active-darkcoral {
+        background-color: #EC665E;
+    }
+    .active-lightcoral {
+        background-color: #F6D4D1;
+    }
+    .active-green {
+        background-color: #85C482;
+    }
+    .active-darkgreen {
+        background-color: #63785F;
+    }
+    .active-lightgreen {
+        background-color: #CCDBC9;
+    }
+    
+    .active-turquoise {
+        background-color: #6BD1C4;
+    }
+    .active-purple {
+        background-color: #872EB9;
+    }
+    .active-lightpurple {
+        background-color: #AA94BD;
+    }
+    .active-darkpurple {
+        background-color: #7C38B2;
+    }
+    .active-aqua {
+        background-color: #3EA481;
+    }
 
     /* hidden elements */ 
 
