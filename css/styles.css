@@ -55,13 +55,13 @@ h2 {
 }
 
 
-h4 {
+h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     margin-bottom: 0;
 }
 
-h6 {
+h4 {
     font-family:'News Cycle', sans-serif;  
     font-size: 24px;
     font-weight: bold;
@@ -956,7 +956,7 @@ legend.tickets {
         padding: 0 70% 10% 7%;
     }
 
-    .container-specialevents-1 h4 {
+    .container-specialevents-1 h3 {
         padding: 5% 0 0 7%;
     }
 
@@ -984,7 +984,7 @@ legend.tickets {
         padding: 0px 50px 60px 420px;
     }
 
-    .container-specialevents-3 h4 {
+    .container-specialevents-3 h3 {
         padding: 100px 50px 0 420px;
     }
 
@@ -1005,7 +1005,7 @@ legend.tickets {
         z-index: 1;
     }
 
-    .container-specialevents-5 h4 {
+    .container-specialevents-5 h3 {
         padding: 60px 710px 0 60px;
     }
 
@@ -1133,7 +1133,7 @@ legend.tickets {
         z-index: 1;
     }
 
-    .container-about-3 h4 {
+    .container-about-3 h3 {
         padding: 20px 0 0 30px;
     }
 
@@ -1149,7 +1149,7 @@ legend.tickets {
         height: 500px;
     }
 
-    .container-about-4 h4 {
+    .container-about-4 h3 {
         padding: 20px 0 0 30px;
     }
 
@@ -1164,7 +1164,7 @@ legend.tickets {
         margin-left: 100px;
     }
 
-    .container-about-5 h4 {
+    .container-about-5 h3 {
         padding: 20px 0 0 40px;
     }
 
