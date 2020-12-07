@@ -811,6 +811,7 @@ legend.tickets {
     .news-photos {
         margin: 0 auto;
         object-fit:cover;
+        height: 570px;
         max-width: 100%;
     }
 
