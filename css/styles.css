@@ -754,13 +754,13 @@ legend.tickets {
         display: block;
         width: 400px;
         height: auto;
-        margin: 40px 0 0 200px;
+        margin: 40px 0 0 100px;
     }
     .polygon-notes.two {
         display: block;
         width: 300px;
         height: auto;
-        margin: 40px 0 0 500px ;
+        margin: 40px 0 0 400px ;
     }
 
 
