@@ -94,6 +94,11 @@ a {
     text-transform: uppercase;
 }
 
+
+label.hidden {
+    font-size: 0px;
+}
+
 /* Borders */ 
 
 .border-lightblue {
@@ -490,7 +495,7 @@ legend {
  }
 
 .centered-text.visit {
-    top: 30%;
+    top: 25%;
 }
 
 .polygon-visit {
@@ -498,6 +503,11 @@ legend {
     margin: 0 auto;
     max-width: 70%;
     margin-bottom: 40px;
+}
+
+.map-visit {
+    width: 250px;
+    height: 150px;
 }
 
 /* Buy tickets */
@@ -556,6 +566,7 @@ label {
     font-weight: lighter;
     margin-bottom: 10px;
 }
+
 
 legend.tickets {
     padding: 0;
@@ -863,7 +874,7 @@ legend.tickets {
         margin-left: 30px;
         display: block;
         max-width: 600px;
-        max-height: 150px;
+        height: 650px;
         padding: 30px;
     }
     .some-icon {
@@ -883,7 +894,7 @@ legend.tickets {
 
     .some-group         {
         grid-area: 1/1/2/2;
-        margin: 450px auto 0;
+        margin: 850px auto 0;
         
      }
 
@@ -1272,6 +1283,12 @@ legend.tickets {
         width: 330px;
         margin: 0;
         }
+        
+
+    .map-visit {
+        width: 300px;
+        height: 200px;
+    }
 
       /* Hidden elements */ 
 
