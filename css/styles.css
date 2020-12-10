@@ -557,6 +557,8 @@ input.tickets {
     height: 50px;
     background-color: #EC665E;
     color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 label {
