@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <meta name="description" content="Take notes on your visit and find them here"/>
-        <title>Community Science Museum | My notes</title>
-    </head>
-    <body class="bg-blue">
-        <header class="navigation"> 
-            <label class="hamburger-icon" for="hamburger-menu"><img class="icon-menu" src="icons/icon-menu.svg" alt="menu icon"></label>
-            <input type="checkbox" id="hamburger-menu">          
-            <a href="index.html"><img class="main-logo" src="icons/CSM-logo.svg" alt="CSM logo"></a>
-            <img class="logo-text" src="icons/csm-text.svg" alt="Community Science Museum">
-            <nav>
-                <ul>
-                    <li class="hidden-menu uppercase"><a href="news.html">news</a></li>
-                    <li class="hidden-menu uppercase"><a href="visit.html">visit</a></li>
-                    <li class="hidden-menu uppercase"><a href="explore.html">explore</a></li>
-                    <li class="hidden-menu uppercase"><a href="specialevents.html">Special Events</a></li>
-                    <li class="hidden-menu uppercase"><a class="active-blue" href="login.html">My notes</a></li>
-                    <li class="hidden-menu uppercase"><a href="about.html">About us</a></li> 
-                    <label class="hidden" for="search">Search bar</label><li class="hidden-menu"><div><input class="search-bar-mobile" type="text" id="search" placeholder="Type your search here..."><img class="button-go mobile" src="icons/button-go.svg" alt="Go button"></div>
-                    <label class="search-icon desktop" for="search-menu"><img class="icon-search" src="icons/icon-search.svg" alt="search icon"></label>
-                    <input class="desktop" type="checkbox" id="search-menu">
-                    <div class="search-bar-desktop">
-                        <input class="search-bar-dropdown" type="text" id="search" placeholder="Type your search and press enter">
-                    </div>
-                </ul>
-            </nav>
-        </header>
-        <aside><img src="icons/mynotes-darkblue.svg" alt="My notes heading"></aside>
-        <main>
-            <section class="container-main">
-                <h1 class="bg-lightgreen">My notes</h1>
-                    <img class="polygon-notes one" src="icons/notesfromvisit.svg" alt="Button for Notes from Visit">
-                    <img class="polygon-notes two" src="icons/notesfromschool.svg" alt="Button for Notes from School">
-            </section>
-        </main>
-        <footer class="footer-border-lightblue">
-            <section class="section-footer-mobile">
-                <a href="contact.html"><img class="footer-icon mobile " src="icons/icon-mail.svg" alt="mail icon"></a>
-                <a href="getinvolved.html"><img class="footer-icon-big mobile" src="icons/icon-community.svg" alt="get involved icon"></a>
-                <a href="login.html"><img class="footer-icon mobile" src="icons/icon-notes.svg" alt="notes icon"></a>  
-            </section>
-            <section class="section-footer-desktop">
-                <div class="footer-item-1">
-                    <a href="https://www.sciencemuseumgroup.org.uk/"><h4 class="uppercase">part of the science museum group</h4></a>
-                    <p class="footer-text bold padding">Explore together.</p>
-                </div>
-                <div class="footer-item-2">
-                    <p class="footer-text bold">Location</p>
-                    <a href="https://www.google.com/maps/place/15+Museum+Ave,+Cardiff+CF10+3ND,+Storbritannia/@51.48618,-3.1810422,17z/data=!3m1!4b1!4m5!3m4!1s0x486e1cbba16d9683:0x4831963ecc16910b!8m2!3d51.486176!4d-3.178853"><p class="footer-text">15 Museum Av</p>
-                    <p class="footer-text">Cardiff CF10 3N</p></a>
-                </div>
-                <div class="footer-item-3">
-                    <p class="footer-text bold">Opening hours</p>
-                    <p class="footer-text">Tue-Thu: 10:00 – 16:00</p>
-                    <p class="footer-text">Friday: 10:00 – 19:00</p>
-                    <p class="footer-text">Sat-Sun: 9:00 – 16:00</p>
-                </div>
-                <div class="footer-item-4">
-                    <a href="contact.html"><p class="footer-text bold">Contact us</p></a>
-                </div>
-                <div class="footer-item-5">
-                    <a href="getinvolved.html"><p class="footer-text bold">Get involved</p></a>
-                </div>
-                <div class="footer-item-6">
-                    <p class="footer-text bold">Terms and conditions</p>
-                </div>
-            </section>
-        </footer>
-    </body>
+
+<head>
+    <link href="css/styles.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Take notes on your visit and find them here" />
+    <title>Community Science Museum | My notes</title>
+</head>
+
+<body class="bg-blue">
+    <header class="navigation">
+        <img class="icon-menu" src="icons/icon-menu.svg" alt="menu icon">
+        <a href="index.html"><img class="main-logo" src="icons/CSM-logo.svg" alt="CSM logo"></a>
+        <img class="logo-text" src="icons/csm-text.svg" alt="Community Science Museum">
+        <nav>
+            <ul class="menu">
+                <li class="hidden-menu uppercase"><a href="news.html">news</a></li>
+                <li class="hidden-menu uppercase"><a href="visit.html">visit</a></li>
+                <li class="hidden-menu uppercase"><a href="explore.html">explore</a></li>
+                <li class="hidden-menu uppercase"><a href="specialevents.html">Special Events</a></li>
+                <li class="hidden-menu uppercase"><a class="active-blue" href="login.html">My notes</a></li>
+                <li class="hidden-menu uppercase"><a href="about.html">About us</a></li>
+            </ul>
+            <div class="hidden-menu">
+                <label class="screenreader" for="search">Search bar</label>
+                <div class="search-background"><input class="search-bar-mobile" type="text" id="search"
+                        placeholder="Type your search here..."><img class="button-go mobile" src="icons/button-go.svg"
+                        alt="Go button"></div>
+                <img class="icon-search" src="icons/icon-search.svg" alt="search icon" tabindex="0">
+            </div>
+
+            <div class="search-bar-desktop">
+                <label class="screenreader" for="search-text">Search bar</label>
+                <input class="search-bar-dropdown" type="text" id="search-text"
+                    placeholder="Type your search and press enter">
+            </div>
+        </nav>
+    </header>
+    <aside><img src="icons/mynotes-darkblue.svg" alt="My notes heading"></aside>
+    <main>
+        <section class="container-main">
+            <h1 class="bg-lightgreen">My notes</h1>
+            <img class="polygon-notes one" src="icons/notesfromvisit.svg" alt="Button for Notes from Visit">
+            <img class="polygon-notes two" src="icons/notesfromschool.svg" alt="Button for Notes from School">
+        </section>
+    </main>
+    <footer class="footer-border-lightblue">
+        <section class="section-footer-mobile">
+            <a href="contact.html"><img class="footer-icon mobile " src="icons/icon-mail.svg" alt="mail icon"></a>
+            <a href="getinvolved.html"><img class="footer-icon-big mobile" src="icons/icon-community.svg"
+                    alt="get involved icon"></a>
+            <a href="login.html"><img class="footer-icon mobile" src="icons/icon-notes.svg" alt="notes icon"></a>
+        </section>
+        <section class="section-footer-desktop">
+            <div class="footer-item-1">
+                <a href="https://www.sciencemuseumgroup.org.uk/">
+                    <h4 class="uppercase">part of the science museum group</h4>
+                </a>
+                <p class="footer-text bold padding">Explore together.</p>
+            </div>
+            <div class="footer-item-2">
+                <p class="footer-text bold">Location</p>
+                <a
+                    href="https://www.google.com/maps/place/15+Museum+Ave,+Cardiff+CF10+3ND,+Storbritannia/@51.48618,-3.1810422,17z/data=!3m1!4b1!4m5!3m4!1s0x486e1cbba16d9683:0x4831963ecc16910b!8m2!3d51.486176!4d-3.178853">
+                    <p class="footer-text">15 Museum Av</p>
+                    <p class="footer-text">Cardiff CF10 3N</p>
+                </a>
+            </div>
+            <div class="footer-item-3">
+                <p class="footer-text bold">Opening hours</p>
+                <p class="footer-text">Tue-Thu: 10:00 – 16:00</p>
+                <p class="footer-text">Friday: 10:00 – 19:00</p>
+                <p class="footer-text">Sat-Sun: 9:00 – 16:00</p>
+            </div>
+            <div class="footer-item-4">
+                <a href="contact.html">
+                    <p class="footer-text bold">Contact us</p>
+                </a>
+            </div>
+            <div class="footer-item-5">
+                <a href="getinvolved.html">
+                    <p class="footer-text bold">Get involved</p>
+                </a>
+            </div>
+            <div class="footer-item-6">
+                <p class="footer-text bold">Terms and conditions</p>
+            </div>
+        </section>
+    </footer>
+    <script src="js/nav.js"></script>
+
+</body>
+
 </html>

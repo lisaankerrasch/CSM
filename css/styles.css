@@ -1,11 +1,25 @@
+/* hidden elements on mobile */
 
-/* hidden elements on mobile */ 
-
-.desktop, .search-bar-desktop { 
+.desktop,
+.search-bar-desktop,
+.icon-search {
     display: none;
 }
 
-/* Global */ 
+/* Global */
+
+.screenreader {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.block {
+    display: block;
+}
 
 body {
     margin: 0;
@@ -22,17 +36,36 @@ body {
     margin-bottom: 63px;
 }
 
-/* Text */ 
+.checksymbol1,
+.checksymbol2,
+.mobile-checksymbol1,
+.mobile-checksymbol2 {
+    display: none;
+    position: relative;
+    width: 30px;
+    top: -55px;
+    left: 250px;
+}
+
+.form-error {
+    display: none;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    color: red;
+}
+
+
+/* Text */
 
 /* h1 is only for mobile headings */
 
 
 h1 {
-    font-family: 'News Cycle', sans-serif; 
+    font-family: 'News Cycle', sans-serif;
     font-size: 34px;
     font-weight: bold;
-    color: #000; 
-    background-color: #CCDBC9;  
+    color: #000;
+    background-color: #CCDBC9;
     text-transform: uppercase;
     text-align: center;
     max-width: 280px;
@@ -40,10 +73,10 @@ h1 {
     padding: 10px;
 }
 
-/* H2 is only for image centered text */ 
+/* H2 is only for image centered text */
 
 h2 {
-    font-family: 'News Cycle', sans-serif; 
+    font-family: 'News Cycle', sans-serif;
     font-size: 32px;
     font-weight: bold;
     color: #fff;
@@ -62,7 +95,7 @@ h3 {
 }
 
 h4 {
-    font-family:'News Cycle', sans-serif;  
+    font-family: 'News Cycle', sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: #fff;
@@ -99,7 +132,7 @@ label.hidden {
     font-size: 0px;
 }
 
-/* Borders */ 
+/* Borders */
 
 .border-lightblue {
     border: 20px solid #BDE1F7;
@@ -176,48 +209,61 @@ label.hidden {
 .border-lightbeige {
     border: 20px solid #F2E6DF;
 }
+
 .border-aqua {
     border: 20px solid #3EA481;
 }
 
-/* Background colors for body, containers, and image text */ 
+/* Background colors for body, containers, and image text */
 
 .bg-beige {
-    background-color:#D8BFB1;
+    background-color: #D8BFB1;
 }
+
 .bg-black {
     background-color: #000;
 }
+
 .bg-blue {
     background-color: #89CAF6;
 }
+
 .bg-darkblue {
     background-color: #3D718C;
 }
+
 .bg-lightblue {
-    background-color:#BDE1F7;
+    background-color: #BDE1F7;
 }
+
 .bg-yellow {
     background-color: #EEC970;
 }
+
 .bg-lightyellow {
-    background-color:#F9EBC6;
+    background-color: #F9EBC6;
 }
+
 .bg-coral {
-    background-color:#E8968E;
+    background-color: #E8968E;
 }
+
 .bg-darkcoral {
     background-color: #EC665E;
 }
+
 .bg-lightcoral {
     background-color: #F6D4D1;
 }
+
 .bg-green {
     background-color: #85C482;
 }
+
 .bg-darkgreen {
     background-color: #63785F;
 }
+
 .bg-lightgreen {
     background-color: #CCDBC9;
 }
@@ -225,26 +271,30 @@ label.hidden {
 .bg-turquoise {
     background-color: #6BD1C4;
 }
+
 .bg-purple {
     background-color: #872EB9;
 }
+
 .bg-lightpurple {
     background-color: #AA94BD;
 }
+
 .bg-darkpurple {
     background-color: #7C38B2;
 }
+
 .bg-aqua {
     background-color: #3EA481;
 }
 
-/* Images */ 
+/* Images */
 
 .square {
     margin: 0 auto;
-    object-fit:cover;
-    width:240px;
-    height:240px;
+    object-fit: cover;
+    width: 240px;
+    height: 240px;
     max-width: 100%;
 }
 
@@ -259,7 +309,21 @@ img {
 
 /* centered text on square images */
 
-.index-item-1, .index-item-2, .index-item-3, .index-item-4, .index-item-5, .index-item-6, .news-item-1, .news-item-2, .news-item-3, .explore-item-1, .explore-item-2, .explore-item-3, .explore-item-4, .explore-item-5, .visit-grid-item.three {
+.index-item-1,
+.index-item-2,
+.index-item-3,
+.index-item-4,
+.index-item-5,
+.index-item-6,
+.news-item-1,
+.news-item-2,
+.news-item-3,
+.explore-item-1,
+.explore-item-2,
+.explore-item-3,
+.explore-item-4,
+.explore-item-5,
+.visit-grid-item.three {
     margin: 0 auto;
     padding-bottom: 63px;
     position: relative;
@@ -275,10 +339,12 @@ img {
     max-width: 230px;
 }
 
-/* Flexbox */ 
+/* Flexbox */
 
-.flex-index-one, .flex-news, .flex-explore {
-    display:flex;
+.flex-index-one,
+.flex-news,
+.flex-explore {
+    display: flex;
     flex-direction: row;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -287,10 +353,6 @@ img {
 
 /* Navigation Mobile */
 
-.navigation {
-background-color: black;
-height:102px;
-}
 
 .icon-menu {
     width: 50px;
@@ -298,8 +360,8 @@ height:102px;
 
 .main-logo {
     width: 80px;
-    margin-left:50px;
-    margin-right:50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .logo-text {
@@ -307,11 +369,13 @@ height:102px;
 }
 
 .navigation {
+    background-color: black;
+    height: 102px;
     padding-top: 16px;
     padding-left: 0;
     padding-right: 0;
     margin: 0;
-    text-align:center;
+    text-align: center;
 }
 
 ul {
@@ -324,11 +388,11 @@ ul {
 }
 
 li {
-padding-top: 20px;
+    padding-top: 20px;
 }
 
 li a {
-    font-family: 'News Cycle', sans-serif; 
+    font-family: 'News Cycle', sans-serif;
     font-size: 32px;
     font-weight: bold;
     text-decoration: none;
@@ -337,6 +401,7 @@ li a {
 }
 
 .search-bar-mobile {
+    display: none;
     background-color: #fff;
     width: 240px;
     max-width: 240px;
@@ -344,9 +409,15 @@ li a {
     border-radius: 30px;
     outline: none;
     border: 3px solid #3EA481;
-    position:relative;
+    position: relative;
+    left: 20px;
+}
+
+.search-background {
+    position: relative;
+    background-color: #000;
     z-index: 2;
-    }
+}
 
 input {
     font-family: 'Roboto', sans-serif;
@@ -357,28 +428,28 @@ input {
 }
 
 .button-go {
+    display: none;
     width: 52px;
     height: 46px;
     padding-left: 20px;
     position: relative;
-    top: 20px;
+    top: -50px;
+    left: 75%;
+    z-index: 2;
 }
 
 #hamburger-menu {
     display: none;
 }
 
-.hidden-menu {
+.menu {
     display: none;
-}
-
-#hamburger-menu:checked ~ nav li.hidden-menu {
-    display: block;
     background-color: #000;
     text-align: left;
     position: relative;
     z-index: 2;
 }
+
 
 /* Footer Mobile */
 
@@ -405,18 +476,18 @@ footer {
 }
 
 
-/* Get Involved  */ 
+/* Get Involved  */
 
 .container-getinvolved {
     max-width: 70%;
     margin: 0 auto;
     padding: 30px;
     margin-bottom: 63px;
- }
+}
 
- /* Login */ 
+/* Login */
 
- fieldset {
+fieldset {
     border: none;
     padding: 0;
 }
@@ -424,15 +495,14 @@ footer {
 .form-box {
     max-width: 200px;
     padding: 10px;
-  }
+}
 
 fieldset input {
     height: 30px;
     width: 200px;
     border-radius: 10px;
     border: 3px solid #3EA481;
-    outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .p-form {
@@ -457,7 +527,7 @@ legend {
     padding: 0 0 30px 0;
 }
 
- /* My Notes Mobile */ 
+/* My Notes Mobile */
 
 
 .polygon-notes {
@@ -465,10 +535,10 @@ legend {
     width: 60%;
     height: auto;
     margin: 40px auto;
-    
+
 }
 
-/* Contact page */ 
+/* Contact page */
 
 .button-contact.mobile {
     margin: 0 auto;
@@ -481,10 +551,10 @@ legend {
     width: 100px;
     height: auto;
     margin: 0 auto;
-    padding-bottom:50px;
+    padding-bottom: 50px;
 }
 
-/* Visit Page mobile */ 
+/* Visit Page mobile */
 
 .container-visit {
     max-width: 70%;
@@ -492,7 +562,7 @@ legend {
     background-color: #F6D4D1;
     padding: 30px;
     margin-bottom: 63px;
- }
+}
 
 .centered-text.visit {
     top: 25%;
@@ -515,7 +585,7 @@ legend {
 .grid-tickets {
     max-width: 1080px;
     display: grid;
-    grid-template-columns: repeat(1060px, 1fr);
+    grid-template-columns: repeat(1fr, 1fr);
     grid-template-rows: repeat(1, 1fr);
     margin-bottom: 150px;
 }
@@ -540,7 +610,7 @@ legend {
 .tickets-box {
     margin: 0 auto;
     max-width: 300px;
-  }
+}
 
 fieldset.tickets input {
     border-radius: 10px;
@@ -575,119 +645,155 @@ legend.tickets {
 
 @media only screen and (min-width:1200px) {
 
-    .active-beige {
-        background-color:#D8BFB1;
+    .icon-menu {
+        display: none;
     }
+
+    .active-beige {
+        background-color: #D8BFB1;
+    }
+
     .active-black {
         background-color: #000;
     }
+
     .active-blue {
+        color: #000;
         background-color: #89CAF6;
     }
+
     .active-darkblue {
         background-color: #3D718C;
     }
+
     .active-lightblue {
-        background-color:#BDE1F7;
+        background-color: #BDE1F7;
     }
+
     .active-yellow {
+        color: #000;
         background-color: #EEC970;
     }
+
     .active-lightyellow {
-        background-color:#F9EBC6;
+        background-color: #F9EBC6;
     }
+
     .active-coral {
-        background-color:#E8968E;
+        background-color: #E8968E;
     }
+
     .active-darkcoral {
         background-color: #EC665E;
     }
+
     .active-lightcoral {
         background-color: #F6D4D1;
     }
+
     .active-green {
+        color: #000;
         background-color: #85C482;
     }
+
     .active-darkgreen {
         background-color: #63785F;
     }
+
     .active-lightgreen {
         background-color: #CCDBC9;
     }
-    
+
     .active-turquoise {
         background-color: #6BD1C4;
     }
+
     .active-purple {
         background-color: #872EB9;
     }
+
     .active-lightpurple {
         background-color: #AA94BD;
     }
+
     .active-darkpurple {
         background-color: #7C38B2;
     }
+
     .active-aqua {
         background-color: #3EA481;
     }
 
-    /* hidden elements */ 
+    /* hidden elements */
 
-    .mobile, .search-bar-mobile, h1, .hamburger-icon {
+    .mobile,
+    .search-bar-mobile,
+    h1,
+    .hamburger-icon {
         display: none;
-    } 
+    }
 
-    /* Desktop header and nav */ 
+    /* Desktop header and nav */
 
     .navigation {
-       height: 231px; 
-       padding-top: 0;
+        height: 250px;
+        padding-top: 0;
     }
+
     .main-logo {
         width: 119px;
-        text-align:center;
-        padding: 42px 16px 20px 15px ;
-        }
+        text-align: center;
+        padding: 42px 16px 20px 15px;
+    }
+
     .logo-text {
         width: 108px;
         padding-bottom: 20px;
     }
+
     ul {
-        text-align: center;    
+        text-align: center;
         padding-left: 0;
         padding-bottom: 0px;
     }
-    .hidden-menu {
-        display: inline;
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
         margin: 0 auto;
         max-width: 1080px;
     }
+
+    .hidden-menu {
+        display: inline;
+    }
+
     li a {
-    padding: 5px 20px 20px 20px;
+        padding: 5px 20px 20px 20px;
     }
-    
+
     #search-menu {
-        display:none;
+        display: none;
     }
-    
-    #search-menu:checked ~ div.search-bar-desktop {
-        display: block;
+
+    .search-bar-desktop {
+        display: none;
+        background-color: #000;
+        width: 100vw;
         text-align: left;
         position: relative;
-        padding-bottom: 10px;
+        padding: 5px 0 10px;
         z-index: 2;
     }
 
-    .search-icon {
-        display: block;
-    }
-    
     .icon-search {
+        display: block;
+        cursor: pointer;
         float: right;
         height: 46px;
-        position: absolute;
-        top: 0px;
-        right: 40px;
+        position: relative;
+        top: -75px;
+        left: -75px;
     }
 
     .search-bar-dropdown {
@@ -702,18 +808,18 @@ legend.tickets {
     }
 
     /* Main */
-    
+
     main {
         max-width: 1080px;
         margin: 0 auto;
     }
 
-    /* Login Desktop */ 
+    /* Login Desktop */
 
     .grid-login {
         max-width: 1080px;
         display: grid;
-        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-columns: repeat(1fr, 1fr);
         grid-template-rows: repeat(1, 1fr);
         margin-bottom: 150px;
     }
@@ -743,10 +849,14 @@ legend.tickets {
         width: 500px;
     }
 
+    .login-photo-3 {
+        cursor: pointer;
+    }
+
     .form-box {
         max-width: 300px;
         padding: 100px;
-      }
+    }
 
     fieldset.tickets input {
         height: 30px;
@@ -760,7 +870,7 @@ legend.tickets {
     }
 
 
-    /* Notes Page Desktop */ 
+    /* Notes Page Desktop */
 
     .polygon-notes.one {
         display: block;
@@ -768,21 +878,22 @@ legend.tickets {
         height: auto;
         margin: 40px 0 0 100px;
     }
+
     .polygon-notes.two {
         display: block;
         width: 300px;
         height: auto;
-        margin: 40px 0 0 450px ;
+        margin: 40px 0 0 450px;
     }
 
 
-    /* Explore Desktop  */ 
+    /* Explore Desktop  */
 
     .flex-explore {
         justify-content: space-between;
     }
 
-    /* Visit Desktop */ 
+    /* Visit Desktop */
 
     .container-visit {
         display: block;
@@ -792,13 +903,13 @@ legend.tickets {
 
     .square {
         margin: 0 auto;
-        object-fit:cover;
-        width:287px;
-        height:287px;
+        object-fit: cover;
+        width: 287px;
+        height: 287px;
         max-width: 100%;
     }
 
-    /* Index Desktop */ 
+    /* Index Desktop */
 
     .flex-index-two {
         display: flex;
@@ -811,12 +922,13 @@ legend.tickets {
         display: block;
         width: 300px;
     }
+
     .container-main {
         margin: 75px auto;
-        max-width: 1060px;  
+        max-width: 1060px;
     }
 
-    /* News Page Desktop */ 
+    /* News Page Desktop */
 
     .news.desktop {
         display: block;
@@ -824,7 +936,7 @@ legend.tickets {
 
     .news-photos {
         margin: 0 auto;
-        object-fit:cover;
+        object-fit: cover;
         height: 570px;
         max-width: 100%;
     }
@@ -842,7 +954,7 @@ legend.tickets {
     }
 
     .container-news {
-        height:500px;
+        height: 500px;
         padding: 20px 30px 50px 30px;
     }
 
@@ -865,10 +977,10 @@ legend.tickets {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 50px; 
+        margin-bottom: 50px;
     }
 
-    /* Contact page desktop */ 
+    /* Contact page desktop */
 
     .container-contact {
         grid-area: 1/1/2/2;
@@ -878,11 +990,13 @@ legend.tickets {
         height: 650px;
         padding: 30px;
     }
+
     .some-icon {
         width: 75px;
         display: inline;
         padding: 0 25px;
     }
+
     .grid-contact {
         margin: 0 auto;
         display: grid;
@@ -893,14 +1007,14 @@ legend.tickets {
         margin-bottom: 350px;
     }
 
-    .some-group         {
+    .some-group {
         grid-area: 1/1/2/2;
         margin: 850px auto 0;
-        
-     }
 
-     .button-getinvolved     {
-        grid-area: 1/2 ;
+    }
+
+    .button-getinvolved {
+        grid-area: 1/2;
         display: block;
         max-width: 350px;
         margin-top: 200px;
@@ -908,12 +1022,12 @@ legend.tickets {
     }
 
 
-     /* Get Involved Desktop */ 
+    /* Get Involved Desktop */
 
     .grid-getinvolved {
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-columns: repeat(1fr, 1fr);
         grid-template-rows: repeat(1, 1fr);
         grid-row-gap: 30px;
         margin-bottom: 150px;
@@ -948,12 +1062,12 @@ legend.tickets {
         margin-left: 500px;
     }
 
-    /* Special Events Desktop */ 
+    /* Special Events Desktop */
 
     .grid-specialevents {
         max-width: 1080px;
         display: grid;
-        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-columns: repeat(1fr, 1fr);
         grid-template-rows: repeat(1, 1fr);
         margin-bottom: 150px;
     }
@@ -961,7 +1075,7 @@ legend.tickets {
     .container-specialevents-1 {
         grid-area: 1/2;
         max-width: 1000px;
-        height:fit-content;
+        height: fit-content;
     }
 
     .container-specialevents-1 p {
@@ -988,7 +1102,7 @@ legend.tickets {
         margin-top: 450px;
         margin-left: 150px;
         max-width: 700px;
-        max-height: 450px; 
+        max-height: 450px;
         z-index: 1;
     }
 
@@ -1028,6 +1142,7 @@ legend.tickets {
     .specialevents-photo-3 {
         width: 420px;
     }
+
     .container-specialevents-6 {
         grid-area: 1/2;
         margin-top: 1100px;
@@ -1035,12 +1150,12 @@ legend.tickets {
         z-index: 2;
     }
 
-    /* Exhibitions Desktop */ 
+    /* Exhibitions Desktop */
 
     .grid-exhibitions {
         max-width: 1080px;
         display: grid;
-        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-columns: repeat(1fr, 1fr);
         grid-template-rows: repeat(1, 1fr);
         margin-bottom: 150px;
     }
@@ -1071,7 +1186,7 @@ legend.tickets {
         margin-top: 550px;
         margin-left: 250px;
         max-width: 700px;
-        max-height: 450px; 
+        max-height: 450px;
         z-index: 2;
     }
 
@@ -1100,17 +1215,17 @@ legend.tickets {
     }
 
     .exhibitions-photo-3 {
-       width: 550px;
+        width: 550px;
     }
 
-    /* About Us Desktop */ 
+    /* About Us Desktop */
 
 
     .grid-about {
         margin-top: 63px;
         max-width: 1080px;
         display: grid;
-        grid-template-columns: repeat(1060px, 1fr);
+        grid-template-columns: repeat(1fr, 1fr);
         grid-template-rows: repeat(1, 1fr);
         margin-bottom: 150px;
     }
@@ -1141,7 +1256,7 @@ legend.tickets {
         grid-area: 1/2;
         margin-top: 600px;
         max-width: 520px;
-        max-height: 500px; 
+        max-height: 500px;
         z-index: 1;
     }
 
@@ -1184,7 +1299,7 @@ legend.tickets {
         padding: 20px 40px 40px 40px;
     }
 
-    /* Side header */ 
+    /* Side header */
 
     aside {
         float: left;
@@ -1204,13 +1319,14 @@ legend.tickets {
         z-index: 1;
     }
 
-    
-    /* Desktop Footer */ 
+
+    /* Desktop Footer */
 
     footer {
         height: 146px;
         background-color: #030303;
-        }
+    }
+
     .section-footer-desktop {
         max-width: 1080px;
         margin: 0 auto;
@@ -1218,82 +1334,92 @@ legend.tickets {
         align-items: flex-start;
         justify-content: space-between;
         padding-top: 20px;
-        }
+    }
+
     .footer-text {
-        font-family: 'News Cycle', sans-serif; 
-        font-size: 18px; 
+        font-family: 'News Cycle', sans-serif;
+        font-size: 18px;
         line-height: 0.5;
-        color: #fff;        
-        }
+        color: #fff;
+    }
 
     .footer-text.padding {
-        padding-top:10px;
+        padding-top: 10px;
     }
+
     .footer-item-1 {
         max-width: 240px;
     }
 
-    /* Footer borders */ 
+    /* Footer borders */
 
     .footer-border-beige {
         border-top: 36px solid #F2E6DF;
     }
+
     .footer-border-lightblue {
         border-top: 36px solid #BDE1F7;
     }
+
     .footer-border-lightyellow {
         border-top: 36px solid #F9EBC6;
     }
+
     .footer-border-lightcoral {
         border-top: 36px solid #F6D4D1;
     }
+
     .footer-border-lightgreen {
         border-top: 36px solid #CCDBC9;
     }
+
     .footer-border-lightpurple {
         border-top: 36px solid #AA94BD;
     }
 
-    /* Visit Page Desktop */ 
+    /* Visit Page Desktop */
 
     .grid-visit {
         display: grid;
         grid-template-columns: 630px 400px;
-        grid-template-areas: 
-        "main sidebar-top"
-        "main sidebar-bottom";
+        grid-template-areas:
+            "main sidebar-top"
+            "main sidebar-bottom";
     }
 
     .visit-grid-item.one {
         grid-area: main;
-      }
+    }
+
     .visit-grid-item.two {
         grid-area: sidebar-top;
         padding-left: 30px;
-      }
+    }
+
     .visit-grid-item.three {
         grid-area: sidebar-bottom;
-      }
+    }
 
     .visit-grid-item.three.desktop {
         display: block;
-      }
+    }
 
     .polygon-visit {
-        display:block;
+        display: block;
         width: 330px;
         margin: 0;
-        }
-        
+    }
+
 
     .map-visit {
         width: 300px;
         height: 200px;
     }
 
-      /* Hidden elements */ 
+    /* Hidden elements */
 
-    .mobile, .container-mobile {
+    .mobile,
+    .container-mobile {
         display: none;
     }
 }
@@ -1302,18 +1428,20 @@ legend.tickets {
     .main-logo {
         margin: 0 20px 0 20px;
     }
+
     .footer-icon-big {
         width: 55px;
         padding: 22px 40px 0 40px;
     }
+
     fieldset input {
         height: 30px;
         width: 150px;
     }
 
     fieldset.tickets input {
-    height: 30px;
-    width: 150px;
+        height: 30px;
+        width: 150px;
     }
 
     .tickets-box {
@@ -1327,13 +1455,15 @@ legend.tickets {
 
 
 @media only screen and (max-width:1199px) {
-    aside, .desktop {
+
+    aside,
+    .desktop {
         display: none;
     }
 }
 
 @media only screen and (max-width:1600px) {
     aside.right {
-        display:none
+        display: none
     }
 }
